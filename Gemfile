@@ -12,6 +12,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production 
+#gem 'carrierwave'
+#gem "fog-aws"
+#gem "fog", "~> 1.3.1"
+gem 'fog', require: 'fog/aws'
+gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
+gem 'figaro'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 
