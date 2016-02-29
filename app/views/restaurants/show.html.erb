@@ -18,7 +18,9 @@
 
 <p>
   <strong>Website:</strong>
-  <%= @restaurant.website %>
+  
+  <a href= <%= @restaurant.website %> > <%= @restaurant.website %> </a>
+
 </p>
 
 <%= link_to 'Edit', edit_restaurant_path(@restaurant), class: "btn btn-link" %> |
