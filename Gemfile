@@ -20,6 +20,7 @@ gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'
 gem 'figaro'
 gem "mini_magick"
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'devise'
 
 
 group :development, :test do
