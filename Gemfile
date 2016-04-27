@@ -21,6 +21,7 @@ gem 'figaro'
 gem "mini_magick"
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
+gem 'searchkick'
 
 
 group :development, :test do

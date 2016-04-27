@@ -1,5 +1,7 @@
 class Restaurant < ActiveRecord::Base
 	mount_uploader :avatar, AvatarUploader
+
+	searchkick
 	
 	has_many :reviews
 
