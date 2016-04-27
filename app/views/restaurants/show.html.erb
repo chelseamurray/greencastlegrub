@@ -39,9 +39,8 @@
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAfDreS1YG3MtThz-ItbpFfnIcy2rov-vo
       &q=<%= @restaurant.address.parameterize %>">
   </iframe>
-
-
 </div>
+
 
 <div class="col-md-8">
   <% if @reviews.blank? %>
@@ -84,7 +83,6 @@
   </div>
 
 
-
 <%= link_to 'Edit', edit_restaurant_path(@restaurant), class: "btn btn-link" %> |
 <%= link_to 'Back', restaurants_path, class: "btn btn-link" %>
 
@@ -97,3 +95,4 @@
     }
   });
 </script>
+
