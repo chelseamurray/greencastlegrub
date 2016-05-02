@@ -14,16 +14,17 @@ class RestaurantsController < ApplicationController
 
   def index
     @restaurants = Restaurant.all
-  end
+ end
 
   # GET /restaurants/1
   # GET /restaurants/1.json
   def show
-    @reviews = Review.where(restaurant_id: @restaurant.id).order("created_at DESC")
+    @reviews = Review.where(restaurant_id: @restaurant.id)
+    @reviews = @restaurant.reviews.order("created_at DESC").paginate(:page => params[:page], :per_page => 6) 
     if @reviews.blank?
       @avg_rating = 0
     else
-     @avg_rating = @reviews.average(:rating).round(2)
+     @avg_rating = @reviews.average(:rating)
    end
   end
 

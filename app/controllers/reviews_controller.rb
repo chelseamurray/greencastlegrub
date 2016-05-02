@@ -4,9 +4,7 @@ class ReviewsController < ApplicationController
   before_action :authenticate_user!
   before_action :check_user, only: [:edit, :update, :destroy]
   
-  def index
-    @reviews = Review.paginate(:page => params[:page], :per_page => 5)
-  end
+
   # GET /reviews/new
   def new
     @review = Review.new

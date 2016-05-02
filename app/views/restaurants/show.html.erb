@@ -54,6 +54,7 @@
         </tr>
      </thead>
 
+<%= will_paginate @reviews %>
      <tbody>
       <% @reviews.each do |review| %>
           <tr>
@@ -79,8 +80,11 @@
          </tbody>
        </table>
       <% end %>
+      </div>
     </div>
-  </div>
+  
+
+
 
 
 <%= link_to 'Back', restaurants_path, class: "btn btn-link" %>
@@ -94,4 +98,5 @@
     }
   });
 </script>
+
 
